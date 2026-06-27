@@ -144,10 +144,10 @@ body {
   background: none;
   border: 1px solid var(--border);
   color: var(--text-muted);
-  padding: 0.3rem 0.6rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   transition: all var(--transition);
   line-height: 1;
 }
@@ -380,6 +380,7 @@ body {
   font-family: var(--font-body);
   transition: all var(--transition);
 }
+.prompt-card:not(.expanded) .copy-btn { display: none; }
 .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
 .copy-btn.copied { background: var(--tag-bg); color: var(--gold); border-color: var(--gold); }
 
@@ -419,6 +420,9 @@ body {
 [lang="ar"] h1,
 [lang="ar"] .prompt-title {
   font-family: var(--font-arabic), var(--font-heading);
+}
+[lang="ar"] .prompt-card-header {
+  flex-direction: row-reverse;
 }
 
 /* Responsive */
